@@ -147,7 +147,7 @@ class Login:
             for key in sent_info:
               if key == "To":
                 continue
-              print("  {}: {}\n".format(key, sent_info[key]))
+              print("  {}: {}".format(key, sent_info[key]))
         self.email()
         #email() is back under for loop since you want to get all messages sent to user
       else:
@@ -165,7 +165,7 @@ class Login:
             for key in sent_info:
               if key == "From":
                 continue
-              print("  {}: {}\n".format(key, sent_info[key]))
+              print("  {}: {}".format(key, sent_info[key]))
         self.email()
       else:
         print("Empty!")
